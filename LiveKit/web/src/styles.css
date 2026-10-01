@@ -1,0 +1,172 @@
+:root {
+  color: #1c1915;
+  background: #f4efe6;
+  font-family: "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.lede {
+  margin: 0 0 1.5rem;
+  color: #5c5348;
+}
+
+.panel {
+  background: #fffdf8;
+  border: 1px solid #e2d8c8;
+  border-radius: 12px;
+  padding: 1rem 1.1rem 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.8rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6d6256;
+}
+
+.join {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+}
+
+label span {
+  font-size: 0.9rem;
+}
+
+input {
+  border: 1px solid #d9cdb8;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  background: #fff;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 0.95rem;
+  background: #2f5d50;
+  color: #f7f3ea;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #efe6d6;
+  color: #2b261f;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.error {
+  margin: 0.8rem 0 0;
+  color: #8c2f2f;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 0.35rem 0.75rem;
+  margin: 0;
+}
+
+.stats dt {
+  color: #6d6256;
+}
+
+.stats dd {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.connection-connected {
+  color: #1f6b45;
+}
+
+.connection-reconnecting,
+.connection-connecting {
+  color: #8a5a12;
+}
+
+.connection-disconnected {
+  color: #6d6256;
+}
+
+.participants {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.participants li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  padding: 0.4rem 0;
+  border-top: 1px solid #efe6d6;
+}
+
+.participants li:first-child {
+  border-top: 0;
+}
+
+.speaking-mark {
+  color: #1f6b45;
+  font-size: 0.9rem;
+}
+
+.you {
+  color: #6d6256;
+  font-size: 0.9rem;
+}
+
+.empty {
+  margin: 0;
+  color: #6d6256;
+}
+
+.remote-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
